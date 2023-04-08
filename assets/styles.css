@@ -131,6 +131,10 @@
   height: 500px;
 }
 
+.share-popup {
+  height: 600px;
+}
+
 .contact-popup-close {
   position: fixed;
   cursor: pointer;
@@ -170,13 +174,22 @@
   border: 1px solid #21E6B1;
 }
 
-.contact-info{
+.contact-info {
   width: 42vw;
   height: 60px;
   background-color: #101010;
   color: white;
   border: none;
 }
+
+.flName {
+  width: 23vw;
+}
+
+.share-info {
+  width: 48vw;
+}
+
 
 .contact-textarea {
   height: 143px !important; 
@@ -185,6 +198,10 @@
 
 .contact-info:focus {
   outline: none;
+}
+
+.flName::placeholder, .share-info::placeholder{
+  color: #C8C8C8; /* Change to your desired color */
 }
 
 #popup-img img {
@@ -222,26 +239,48 @@ h1 {
     height: 30vh;
     top: 11%;
   }
+  .bar-share {
+    height: 41vh;
+    top: 14%;
+  }
   .contact-popup-close {
     top: 9%;
     right: 22%;
   }
+  .share-popup-close{
+    top: 10%;
+  }
   .contact-info {
     width: 32vw;
   }
+  .share-info {
+    width: 32.8vw;
+  }
+  .flName{
+    width: 15.7vw;
+  }
 }
 
-@media screen and (min-width: 1680px) {
+@media screen and (min-width: 1680px) and (max-width: 1900px) {
   .bar{
     height: 47vh;
     top: 18%;
   }
+  .bar-share {
+    height: 58vh;
+  }
   .contact-info {
     width: 36vw;
+  }
+  .share-info {
+    width: 37.7vw;
   }
   .contact-popup-close {
     top: 14%;
     right: 18%;
+  }
+  .flName{
+    width: 18vw;
   }
 }
 
@@ -250,10 +289,23 @@ h1 {
     height: 45vh;
     top: 17%;
   }
+  .bar-share {
+    height: 57vh;
+  }
   .contact-popup-close {
     top: 13%;
     right: 13%;
   }
+  .share-popup-close {
+    top: 13%;
+    right: 13%;
+  }
+  .share-info {
+    width: 43.9vw;
+  }
+  .flName {
+    width: 21vw;
+}
 }
 
 @media screen and (max-width: 1300px) {
@@ -272,11 +324,20 @@ h1 {
     height: 54vh;
     top: 20%;
   }
+  .bar-share {
+    height: 65vh;
+  }
   .contact-popup-close {
     top: 15%;
   }
   .contact-info {
     width: 42vw;
+  }
+  .flName {
+    width: 21vw !important;
+  }
+  .share-info{
+    width: 44vw;
   }
 }
 
@@ -290,8 +351,14 @@ h1 {
     height: 41vh;
     transform: rotate(-90deg);
   }
+  .bar-share {
+    top: -15.5%;
+  }
   .contact-popup-content {
     flex-direction: column;
+  }
+  .share-popup-content {
+    margin: 20px auto;
   }
   h1 {
     font-size: 24px;
@@ -299,6 +366,9 @@ h1 {
   .contact-popup-close {
     top: 16%;
     right: 10%;
+  }
+  .share-popup-close {
+    top: 6%;
   }
   .contact-info {
     width: 85vw;
@@ -309,23 +379,41 @@ h1 {
   .contact-popup-content {
     max-width: 90%;
   }
+  .flName {
+    width: 85vw;
+  }
+  .share-popup {
+    height: 730px;
+  }
 }
 
 @media screen and (max-width: 375px) {
   .bar {
     top: -5.2%;
   }
+  .bar-share {
+    top: -13.6%;
+  }
   .contact-popup-close {
     top: 14%;
     right: 10%;
+  }
+  .share-popup-close {
+    top: 5%;
   }
 }
 @media screen and (max-width: 320px) {
   .bar {
     top: -4.5%;
   }
+  .bar-share {
+    top: -11.7%;
+  }
   .contact-popup-close {
     top: 12%;
+  }
+  .share-popup-close {
+    top: 5%;
   }
   .contact-info {
     width: 110vw;
