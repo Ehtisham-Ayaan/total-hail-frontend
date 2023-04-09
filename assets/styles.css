@@ -85,6 +85,10 @@
   aspect-ratio: 16 / 9;
 }
 
+.ratio-5 {
+  aspect-ratio: 5 / 9;
+}
+
 .widget-video .e-hosted-video .video-container {
   -o-object-fit: cover;
   object-fit: cover;
@@ -125,7 +129,7 @@
 
 .contact-popup-content {
   background-color: #1C1C1C;
-  max-width: 100%;
+  max-width: 85%;
   margin: 100px auto;
   border-radius: 50px;
   height: 500px;
@@ -201,7 +205,7 @@
 }
 
 .flName::placeholder, .share-info::placeholder{
-  color: #C8C8C8; /* Change to your desired color */
+  color: #C8C8C8; 
 }
 
 #popup-img img {
@@ -230,6 +234,10 @@
 
 h1 {
   font-weight: 900;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* Styles for Responsiveness */
@@ -282,15 +290,18 @@ h1 {
   .flName{
     width: 18vw;
   }
+  .contact-popup-content {
+    max-width: 85.5%;
+  }
 }
 
 @media screen and (max-width: 1440px) {
   .bar{
-    height: 45vh;
+    height: 42vh;
     top: 17%;
   }
   .bar-share {
-    height: 57vh;
+    height: 52vh;
   }
   .contact-popup-close {
     top: 13%;
@@ -305,7 +316,10 @@ h1 {
   }
   .flName {
     width: 21vw;
-}
+  }
+  .contact-popup-content {
+    max-width: 86%;
+  }
 }
 
 @media screen and (max-width: 1300px) {
@@ -338,6 +352,9 @@ h1 {
   }
   .share-info{
     width: 44vw;
+  }
+  .contact-popup-content {
+    max-width: 100%;
   }
 }
 
