@@ -144,8 +144,8 @@
   cursor: pointer;
   font-size: 18px;
   border: 5px solid black;
-  top: 12%;
-  right: 13%;
+  top: 7rem;
+  right: 15rem;
   padding: 7px !important;
   padding-left: 14px !important;
   padding-right: 14px !important;
@@ -179,7 +179,7 @@
 }
 
 .contact-info {
-  width: 42vw;
+  width: 38.5rem;
   height: 60px;
   background-color: #101010;
   color: white;
@@ -187,11 +187,11 @@
 }
 
 .flName {
-  width: 23vw;
+  width: 18.7rem;
 }
 
 .share-info {
-  width: 48vw;
+  width: 38.9rem;
 }
 
 
@@ -222,10 +222,14 @@
 
 .bar{
   width: 8px;
-  height: 39vh;
-  top: 15%;
+  height: 24rem;
+  top: 10rem;
   background: #21E6B1;
   border-radius: 50px;
+}
+
+.bar-share {
+  height: 30rem !important;
 }
 
 .pl-8 {
@@ -240,121 +244,156 @@ a {
   text-decoration: none;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 30px #101010 inset !important; 
+  -webkit-text-fill-color: white !important;
+}
+
 /* Styles for Responsiveness */
 
-@media screen and (min-width: 1920px) {
-  .bar{
-    height: 30vh;
-    top: 11%;
-  }
-  .bar-share {
-    height: 41vh;
-    top: 14%;
-  }
+@media screen and (max-width: 2560px) {
   .contact-popup-close {
-    top: 9%;
-    right: 22%;
-  }
-  .share-popup-close{
-    top: 10%;
+    right: 46.5rem;
   }
   .contact-info {
-    width: 32vw;
+    width: 37.5rem;
   }
   .share-info {
-    width: 32.8vw;
+    width: 38.8rem;
   }
-  .flName{
-    width: 15.7vw;
+  .flName {
+    width: 18.7rem;
   }
 }
 
-@media screen and (min-width: 1680px) and (max-width: 1900px) {
+@media screen and (max-width: 2300px) {
   .bar{
-    height: 47vh;
-    top: 18%;
+    height: 24rem;
+    top: 10rem;
   }
   .bar-share {
-    height: 58vh;
-  }
-  .contact-info {
-    width: 36vw;
-  }
-  .share-info {
-    width: 37.7vw;
+    height: 30rem;
+    top: 10rem;
   }
   .contact-popup-close {
-    top: 14%;
-    right: 18%;
+    top: 7rem;
+    right: 38.5rem;
   }
-  .flName{
-    width: 18vw;
+  .contact-info {
+    width: 37.5rem;
   }
-  .contact-popup-content {
-    max-width: 85.5%;
+  .flName {
+    width: 18.7rem;
+  }
+  
+  .share-info {
+    width: 38.9rem;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .contact-popup-close {
+    top: 7rem;
+    right: 26.5rem;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  .contact-popup-close {
+    right: 19.5rem;
   }
 }
 
 @media screen and (max-width: 1440px) {
   .bar{
-    height: 42vh;
-    top: 17%;
+    height: 24rem;
+    top: 10rem;
   }
   .bar-share {
-    height: 52vh;
+    height: 30rem;
   }
   .contact-popup-close {
-    top: 13%;
-    right: 13%;
+    top: 7rem;
+    right: 11rem;
   }
   .share-popup-close {
-    top: 13%;
-    right: 13%;
+    top: 7rem;
+    right: 11rem;
+  }
+  .contact-info {
+    width: 38.5rem;
   }
   .share-info {
-    width: 43.9vw;
+    width: 39.7rem;
   }
+  
   .flName {
-    width: 21vw;
+    width: 19.1rem;
   }
   .contact-popup-content {
     max-width: 86%;
   }
 }
 
-@media screen and (max-width: 1300px) {
-  .bar{
-    height: 48vh;
-    top: 19%;
+@media screen and (max-width: 1399px) {
+  .share-info {
+    width: 30rem;
   }
-  .contact-popup-close {
-    top: 14%;
-    right: 6%;
+  .flName {
+    width: 14.3rem;
+  }
+  .share-popup-close {
+    right: 15rem;
   }
 }
 
-@media screen and (min-width: 1023px) and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
   .bar {
-    height: 54vh;
-    top: 20%;
+    height: 24rem;
+    top: 10rem;
   }
   .bar-share {
-    height: 65vh;
+    height: 30rem;
   }
   .contact-popup-close {
-    top: 15%;
+    top: 7rem;
+    right: 7rem;
   }
   .contact-info {
-    width: 42vw;
+    width: 38.4rem;
   }
   .flName {
-    width: 21vw !important;
+    width: 19.1rem;
   }
   .share-info{
-    width: 44vw;
+    width: 39.8rem !important;
   }
   .contact-popup-content {
     max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contact-popup-close {
+    top: 7rem;
+    right: 4rem;
+  }
+  .contact-info {
+    width: 27.2rem;
+  }
+  .flName {
+    width: 13.5rem;
+  }
+  .share-info{
+    width: 28.5rem !important;
   }
 }
 
@@ -363,13 +402,13 @@ a {
     max-height: 22vh;
   }
   .bar {
-    top: -6%;
+    top: -3.2rem;
     left: 49%;
-    height: 41vh;
+    height: 20rem !important;
     transform: rotate(-90deg);
   }
   .bar-share {
-    top: -15.5%;
+    top: -8.5rem;
   }
   .contact-popup-content {
     flex-direction: column;
@@ -381,14 +420,14 @@ a {
     font-size: 24px;
   }
   .contact-popup-close {
-    top: 16%;
+    top: 9rem;
     right: 10%;
   }
   .share-popup-close {
-    top: 6%;
+    top: 3rem;
   }
   .contact-info {
-    width: 85vw;
+    width: 22rem;
   }
   #popup-img img {
     content: url(./Mask_group_res.png); 
@@ -397,42 +436,24 @@ a {
     max-width: 90%;
   }
   .flName {
-    width: 85vw;
+    width: 22rem;
   }
   .share-popup {
     height: 730px;
   }
 }
 
-@media screen and (max-width: 375px) {
-  .bar {
-    top: -5.2%;
-  }
-  .bar-share {
-    top: -13.6%;
-  }
-  .contact-popup-close {
-    top: 14%;
-    right: 10%;
-  }
-  .share-popup-close {
-    top: 5%;
-  }
-}
 @media screen and (max-width: 320px) {
   .bar {
-    top: -4.5%;
+    top: -3.5rem;
   }
   .bar-share {
-    top: -11.7%;
+    top: -8.4rem;
   }
   .contact-popup-close {
-    top: 12%;
+    top: 9rem;
   }
   .share-popup-close {
-    top: 5%;
-  }
-  .contact-info {
-    width: 110vw;
+    top: 3rem;
   }
 }
