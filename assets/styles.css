@@ -234,7 +234,7 @@
 }
 
 .bar-share {
-  height: 30rem !important;
+  height: 30rem;
 }
 
 .pl-8 {
@@ -321,6 +321,9 @@ select:-webkit-autofill:focus {
 }
 
 @media screen and (max-width: 1399px) {
+  .contact-info {
+    width: 28.4rem;
+  }
   .share-info {
     width: 30rem;
   }
@@ -351,7 +354,7 @@ select:-webkit-autofill:focus {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .contact-info {
     width: 27.2rem;
   }
@@ -363,18 +366,31 @@ select:-webkit-autofill:focus {
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 1023px) {
+  .contact-info {
+    width: 27.2rem;
+  }
+  .flName {
+    width: 13.5rem;
+  }
+  .share-info{
+    width: 28.5rem;
+  }
+}
+
+
+@media screen and (max-width: 991px) {
   #popup-img {
     max-height: 22vh;
   }
   .bar {
-    top: -3.5rem;
+    top: -8.5rem;
     left: 49%;
-    height: 20rem !important;
+    height: 30rem;
     transform: rotate(-90deg);
   }
   .bar-share {
-    top: -8.5rem;
+    top: -13.5rem;
   }
   .contact-popup-content {
     flex-direction: column;
@@ -386,13 +402,14 @@ select:-webkit-autofill:focus {
     font-size: 24px;
   }
   .contact-popup-close {
-    top: -40rem;
+    top: -48rem;
+    left: 34rem;
   }
   .share-popup-close {
-    top: -53rem;
+    top: -62rem;
   }
   .contact-info {
-    width: 22rem;
+    width: 36rem;
   }
   #popup-img img {
     content: url(./Mask_group_res.png); 
@@ -401,12 +418,112 @@ select:-webkit-autofill:focus {
     max-width: 90%;
   }
   .flName {
-    width: 22rem;
+    width: 36rem;
   }
   .share-popup {
     height: 730px;
   }
 }
+
+@media screen and (max-width: 767px){
+  .contact-popup-close {
+    top: -42rem;
+    left: 24rem;
+  }
+  .share-popup-close {
+    top: -55rem;
+  }
+  .flName {
+    width: 26rem;
+  }
+  .contact-info {
+    width: 26rem;
+  }
+  .bar, .bar-share {
+    height: 20rem;
+  }
+  .bar {
+    top: -3.5rem;
+  }
+  .bar-share {
+    top: -8.5rem;
+  }
+}
+
+@media screen and (max-width: 575px){
+  .contact-popup-close {
+    top: -43.5rem;
+    left: 26rem;
+  }
+  .share-popup-close {
+    top: -56.5rem;
+  }
+  .contact-info {
+    width: 28rem;
+  }
+  .flName {
+    width: 28rem;
+  }
+}
+
+@media screen and (max-width: 560px){
+  .contact-popup-close {
+    top: -43.5rem;
+    left: 25.5rem;
+  }
+  .share-popup-close {
+    top: -56.5rem;
+  }
+  .contact-info {
+    width: 27rem;
+  }
+  .flName {
+    width: 27rem;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .contact-info {
+    width: 25rem;
+  }
+  .flName {
+    width: 25rem;
+  }
+  .contact-popup-close {
+    top: -42rem;
+    left: 24rem;
+  }
+  .share-popup-close {
+    top: -56rem;
+  }
+}
+
+@media screen and (max-width: 510px) {
+ .contact-popup-close {
+    top: -41rem;
+    left: 23rem;
+  }
+  .share-popup-close {
+    top: -54rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contact-popup-close {
+    top: -40rem;
+    left: 20rem;
+  }
+  .share-popup-close {
+    top: -53rem;
+  }
+  .contact-info {
+    width: 22rem;
+  }
+  .flName {
+    width: 22rem;
+  }
+}
+
 
 @media screen and (max-width: 320px) {
   .bar {
